@@ -1,0 +1,51 @@
+$margin: 5px;
+
+@mixin text-center {
+  text-align: center;
+}
+
+main {
+  @include text-center;
+  #main-counter {
+    margin-right: calc($margin * 2 - 2px);
+  }
+}
+
+.counter-btn {
+  @include text-center;
+
+  #increment-btn {
+    margin-right: $margin;
+  }
+
+  #decrement-btn {
+    margin-left: $margin;
+  }
+}
+
+.reset-btn {
+  @include text-center;
+
+  #reset {
+    margin-top: calc($margin * 2);
+    margin-left: calc($margin - 3px);
+  }
+}
+
+.set-btn {
+  @include text-center;
+  margin-top: calc($margin - 3px);
+  margin-left: calc($margin + 2px);
+
+  #ten {
+    margin-right: calc($margin + 1px);
+  }
+
+  #hundred {
+    margin-left: calc($margin - 3px);
+  }
+
+  #thousand {
+    margin-left: calc($margin + 1px);
+  }
+}

@@ -1,0 +1,38 @@
+<main>
+  <h4 id="main-counter">Count is {{ count }}</h4>
+</main>
+
+<div class="counter-btn">
+  <button id="increment-btn" nbButton hero status="success" (click)="increment(count)">
+    Increment
+  </button>
+  <button id="decrement-btn" nbButton hero status="danger" (click)="decrement(count)">
+    Decrement
+  </button>
+</div>
+
+<div class="reset-btn">
+  <button id="reset" nbButton hero status="warning"
+    (click)="resetHandle()">
+      Reset
+  </button>
+</div>
+
+<br>
+<hr size="2px" color="#598bff">
+<br>
+
+<div class="set-btn">
+  <button id="ten" nbButton hero status="info"
+    (click)="setSaveCount(10)">
+      10
+  </button>
+  <button id="hundred" nbButton hero status="info"
+    (click)="setSaveCount(100)">
+      100
+  </button>
+  <button id="thousand" nbButton hero status="info"
+    (click)="setSaveCount(1000)">
+      1000
+  </button>
+</div>

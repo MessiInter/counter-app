@@ -1,0 +1,49 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "Start dev server",
+      "command": "ng serve",
+      "runAtStart": true,
+      "preview": {
+        "port": 4200
+      }
+    },
+    "build": {
+      "name": "Build for production",
+      "command": "ng build",
+      "runAtStart": false
+    },
+    "watch": {
+      "name": "Build for production (watch mode)",
+      "command": "ng build --watch --configuration development",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "Execute unit test",
+      "command": "ng test",
+      "runAtStart": false,
+      "preview": {
+        "port": 9876
+      }
+    },
+    "lint": {
+      "name": "Execute code linter",
+      "command": "ng lint",
+      "runAtStart": false
+    },
+    "e2e": {
+      "name": "Execute E2E test",
+      "command": "npm run e2e",
+      "runAtStart": false
+    }
+  }
+}
